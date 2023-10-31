@@ -8,16 +8,6 @@ const validateUser = (userData) => {
     return schema.validate(userData);
 };
 
-
-const validateLogin = (loginUserData) => {
-    const schema = Joi.object({
-        userName: Joi.string().required(),
-        password: Joi.string().required(),
-    });
-    return schema.validate(loginUserData);
-};
-
 module.exports = {
-    validateUser,
-    validateLogin
+    validateUser
 }

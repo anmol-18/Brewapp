@@ -1,4 +1,4 @@
-const { validateUser, validateLogin} = require('../utils/validation');
+const { validateUser} = require('../utils/validation');
 const UserSchema = require('../models/user.model');
 const {hashPass} = require('../utils/password');
 const bcrypt = require('bcryptjs');
